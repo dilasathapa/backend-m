@@ -3,8 +3,10 @@ const connection = require("./db/connectDatabase")
 // const authRouter = require("./routes/auth.routes")
 // const userRouter = require("./routes/getusers.routes")
 const cors = require("cors")
-const postRouter = require("./routes/postmovies.routes")
-const getRouter = require("./routes/getmovies.routes")
+// const postRouter = require("./routes/postmovies.routes")
+// const getRouter = require("./routes/getmovies.routes")
+const getRouter = require("./models/routes/getmovies.routes")
+const postRouter = require("./models/routes/postmovies.routes")
 const app = express();
 
 app.use(cors());
